@@ -3,7 +3,7 @@ import numpy as np
 import joblib
 
 # Load model and scaler
-33@st.cache_resource
+@st.cache_resource
 def load_model_and_scaler():
     model = joblib.load('rf_model.pkl')
     scaler = joblib.load('scaler.pkl')
